@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.3.292](https://github.com/UKGovernmentBEIS/inspect_ai/compare/0.3.291...0.3.292) (2026-11-18)
+
+
+### Features
+
+* a Task can set its own max_samples ([#6642](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6642)) ([12e4744](https://github.com/UKGovernmentBEIS/inspect_ai/commit/12e474464770eaed5b031e86a1f523b2f320015f))
+* **openai:** warn when GPT-6.2 discards replayed reasoning, such as after edit compaction ([#6638](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6638)) ([a195a5e](https://github.com/UKGovernmentBEIS/inspect_ai/commit/a195a5ea93c035d9a930a6d555df80104fce75d3))
+* **sentinel:** replay gives a tool call under a reused call id the model call that proposed it, and replays transcripts Scout imports ([#6446](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6446)) ([065db45](https://github.com/UKGovernmentBEIS/inspect_ai/commit/065db459b536dcd4adb8921e7df3408bda4285d4))
+* **sentinel:** tool steps carry the assistant message that made the call ([#6598](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6598)) ([9946095](https://github.com/UKGovernmentBEIS/inspect_ai/commit/994609574c100277a359ea5a79c0ce33de9bbb73))
+
+
+### Bug Fixes
+
+* a malformed hash in a shared-buffer manifest can no longer make log recovery open a file outside the buffer ([#6627](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6627)) ([7adfe8c](https://github.com/UKGovernmentBEIS/inspect_ai/commit/7adfe8c1806e1485e69a7bd2ed3f9f4342d1ec63))
+* **bridge:** bridged Google agents keep each tool call's id without a sentinel ([#6635](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6635)) ([371c865](https://github.com/UKGovernmentBEIS/inspect_ai/commit/371c8650f372d35d6e949a5f032e443be84feaa0))
+* classify sandbox timeouts so scorers can tell a command deadline from an unresponsive sandbox ([#6308](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6308)) ([5f2e27d](https://github.com/UKGovernmentBEIS/inspect_ai/commit/5f2e27da643a1fc55e70b3086c40eb4cbca08e9e))
+* confine temporary attachment files during crashed-log recovery ([#6626](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6626)) ([23513f1](https://github.com/UKGovernmentBEIS/inspect_ai/commit/23513f11cc3cb72d4a97b5556bb0253c97761a0d))
+* missed sandbox cleanup and LookupError on E2B, Modal and Daytona with several sandbox configurations or an empty SampleSource seed ([#6633](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6633)) ([e131d7c](https://github.com/UKGovernmentBEIS/inspect_ai/commit/e131d7c977584387882bd94cc9a555e1785efc1b))
+* multiple_choice eval hang when a model answers with a long run of spaces ([#6616](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6616)) ([208d172](https://github.com/UKGovernmentBEIS/inspect_ai/commit/208d17273ba6f62ebacfd3bd84b17a620fc6ad6b))
+
 ## [0.3.291](https://github.com/UKGovernmentBEIS/inspect_ai/compare/0.3.290...0.3.291) (2026-11-17)
 
 
